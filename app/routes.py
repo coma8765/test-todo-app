@@ -55,7 +55,7 @@ class APITask(Resource):
     @api.doc("update_task")
     @api.expect(task_model)
     @api.marshal_with(task_model)
-    def put(self, id):
+    def patch(self, id):
         """Update a task given its identifier"""
         task = Task.query.get_or_404(id)
         data = api.payload

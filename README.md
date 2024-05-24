@@ -25,7 +25,7 @@
     - Ответ: JSON-объект с полями `id`, `title`, `description`, `created_at`, `updated_at`.
 
 4. Обновление задачи:
-    - Метод: PUT
+    - Метод: PATCH
     - URL: `/tasks/<id>`
     - Параметры запроса: JSON-объект с полями `title` (строка, опционально) и `description` (строка, опционально).
     - Ответ: JSON-объект с полями `id`, `title`, `description`, `created_at`, `updated_at`.
